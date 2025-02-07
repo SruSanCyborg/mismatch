@@ -26,8 +26,10 @@
 		"@auth/mongodb-adapter": "^3.7.4",
 		"@auth/sveltekit": "^1.7.4",
 		"@aws-sdk/client-dynamodb": "^3.741.0",
+		"@tailwindcss/vite": "^4.0.3",
 		"dotenv": "^16.4.7",
 		"jsonwebtoken": "^9.0.2",
-		"mongodb": "^6.13.0"
+		"mongodb": "^6.13.0",
+		"tailwindcss": "^4.0.3"
 	}
 }
