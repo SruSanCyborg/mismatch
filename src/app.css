@@ -1,1 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import "tailwindcss";
+
+@theme{
+    --font-rGlitch: "Rubik Glitch", sans-serif;
+}
