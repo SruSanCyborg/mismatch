@@ -4,8 +4,14 @@
   
   <div class="min-h-screen bg-black text-white p-6 font-sans">
     <!-- Main About Section -->
-    <div class="max-w-4xl mx-auto mb-12">
+    <div class="max-w-4xl h-4xl mx-auto mb-12">
       <div class="relative bg-black rounded-lg p-8 border-2 border-blue-500 shadow-[0_0_30px_rgba(0,149,255,0.5)]">
+        <img 
+      class="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg blur-[0.1px]" 
+      src="/logo.png"
+      alt="Background"
+    />
+
         <div class="text-center space-y-6">
           <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-300 to-purple-400 animate-pulse">
             About Us
@@ -18,8 +24,8 @@
             <p class="leading-relaxed max-w-2xl mx-auto">
               Mismatch is all about breaking boundaries, blending ideas, and creating innovative solutions by bringing together unique perspectives. Whether you're a coder, designer, strategist, or innovator, this is your chance to collaborate, experiment, and push the limits of creativity.
             </p>
-            <p class="leading-relaxed max-w-2xl mx-auto">
-              With real-world challenges and an open platform to showcase your groundbreaking ideas, Mismatch promises an experience like no other! Step out of your comfort zone, rethink possibilities, and build solutions that could redefine the future.
+            <p class="leading-relaxed max-w-2xl  mx-auto">
+              With real-world challenges and an open platform to showcase your groundbreaking ideas,<br/> Mismatch promises an experience like no other! Step out of your comfort zone, rethink possibilities, and build solutions that could <br/>redefine the future.
             </p>
           </div>
           <p class="text-xl font-medium text-pink-400 mt-8">
