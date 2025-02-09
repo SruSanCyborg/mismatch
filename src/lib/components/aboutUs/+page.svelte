@@ -53,14 +53,14 @@
           <!-- VIT Chennai Images -->
           <div class="space-y-4">
             <img 
-              src="/api/placeholder/400/200"
+              src="/vit1.png"
               alt="VIT Chennai Campus"
-              class="w-full h-48 object-cover rounded-lg border border-purple-500/50"
+              class="w-full h-48 object-cover  rounded-tr-[5rem] border border-purple-500/50"
             />
             <img 
-              src="/api/placeholder/400/200"
+              src="/vit2.png"
               alt="VIT Chennai Campus"
-              class="w-full h-48 object-cover rounded-lg border border-purple-500/50"
+              class="w-full h-48 object-cover rounded-tl-[6rem]  border border-purple-500/50"
             />
           </div>
         </div>
@@ -85,10 +85,10 @@
             <div class="absolute inset-0 bg-purple-600/30 rounded-xl blur-xl"></div>
             <div class="relative bg-black/90 rounded-xl p-6 border-2 border-purple-500">
               <p class="text-center text-purple-200/90 leading-relaxed">
-                At VIT Chennai, a premier institute known for excellence in education and research, we aim to provide a platform for bright minds to shine.
+                At VIT Chennai, a premier <br/> institute known for <br/> excellence in education and <br/> research, we aim to provide a <br/>platform for bright minds to<br/>shine.
               </p>
               <div class="absolute -bottom-6 -right-6">
-                <Bot class="w-12 h-12 text-purple-500 transform rotate-12" />
+                <img src="/Controller.png" class="w-12 h-12 text-purple-500 transform rotate-12" alt="controller" />
               </div>
             </div>
           </div>
