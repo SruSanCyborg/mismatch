@@ -1,5 +1,0 @@
-@import "tailwindcss";
-@reference "tailwindcss/theme";
-  :global(html) {
-    background-color: theme(--color-gray-100);
-  }

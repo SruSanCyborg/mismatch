@@ -11,6 +11,13 @@
   import Contact from "$lib/components/contactUs/+page.svelte";
   import Footer from "$lib/components/footer/+page.svelte";
 </script>
+
+<style>
+  @reference "tailwindcss/theme";
+  :global(html) {
+    background-color: theme(--color-gray-100);
+  }
+</style>
  
 <div class="m-10">
   <Navbar />
