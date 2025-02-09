@@ -3,7 +3,7 @@
   </script>
   
   <div class="min-h-screen bg-black text-white p-6 font-sans">
-    <!-- Main About Section -->
+   
     <div class="max-w-4xl h-4xl mx-auto mb-12">
       <div class="relative bg-black rounded-lg p-8 border-2 border-blue-500 shadow-[0_0_30px_rgba(0,149,255,0.5)]">
         <img 
@@ -35,12 +35,12 @@
       </div>
     </div>
   
-    <!-- Lower Section -->
+    
     <div class="max-w-5xl mx-auto px-4">
       <div class="grid grid-cols-12 gap-8">
-        <!-- Left Side -->
+       
         <div class="col-span-5 space-y-8 pl-10">
-          <!-- IEERAS Club Card -->
+          
           <div class="relative">
             <div class="absolute inset-0 bg-purple-600/30 rounded-xl blur-xl"></div>
             <div class="relative bg-black/90 rounded-xl p-6 border-2 border-purple-500">
@@ -50,7 +50,7 @@
             </div>
           </div>
   
-          <!-- VIT Chennai Images -->
+          
           <div class="space-y-4">
             <img 
               src="/vit1.png"
@@ -65,14 +65,14 @@
           </div>
         </div>
   
-        <!-- Center Line -->
+        
         <div class="col-span-2 flex justify-center">
           <div class="w-px h-40  bg-purple-500/50"></div>
         </div>
   
-        <!-- Right Side -->
+        
         <div class="col-span-5 space-y-8">
-          <!-- Logo -->
+          
           <div class="flex justify-end mb-8">
             <div class="pb-7 w-2xl  ">
               <img class="  w-56 h-56 object-contain" src="/ras.svg" alt="IEERAS Logo" />
@@ -80,7 +80,7 @@
             </div>
           </div>
   
-          <!-- VIT Chennai Card -->
+          
           <div class="relative mt-8">
             <div class="absolute inset-0 bg-purple-600/30 rounded-xl blur-xl"></div>
             <div class="relative bg-black/90 rounded-xl p-6 border-2 border-purple-500">
