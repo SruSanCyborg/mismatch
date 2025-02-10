@@ -6,11 +6,7 @@
    
     <div class="max-w-4xl h-4xl mx-auto mb-12">
       <div class="relative bg-black rounded-lg p-8 border-2 border-blue-500 shadow-[0_0_30px_rgba(0,149,255,0.5)]">
-        <img 
-      class="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg blur-[0.1px]" 
-      src="/logo.png"
-      alt="Background"
-    />
+        
 
         <div class="text-center space-y-6">
           <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-300 to-purple-400 animate-pulse">
@@ -53,7 +49,7 @@
           
           <div class="space-y-4">
             <img 
-              src="/vit1.png"
+              src="/vit.jpg"
               alt="VIT Chennai Campus"
               class="w-full h-48 object-cover  rounded-tr-[5rem] border border-purple-500/50"
             />
