@@ -1,6 +1,4 @@
-<!-- Cards.svelte -->
 <script>
-    // Props to make the component configurable
     export let cards = [
       {
         title: "Card One",
@@ -8,31 +6,26 @@
         imageUrl: "https://source.unsplash.com/collection/905011/1000x1000"
       },
       {
-        title: "Card Two",
+        title: "Card Two", 
         description: "Description for card two goes here. Hover to reveal more information.",
         imageUrl: "https://source.unsplash.com/collection/905011/1000x1000"
       },
       {
         title: "Card Three",
-        description: "Description for card three goes here. Hover to reveal more information.",
+        description: "Description for card three goes here. Hover to reveal more information.", 
         imageUrl: "https://source.unsplash.com/collection/905011/1000x1000"
       },
-      {
-        title: "Card Four",
-        description: "Description for card four goes here. Hover to reveal more information.",
+        {
+        title: "Card Three",
+        description: "Description for card three goes here. Hover to reveal more information.", 
         imageUrl: "https://source.unsplash.com/collection/905011/1000x1000"
-      },
-       {
-        title: "Card Four",
-        description: "Description for card four goes here. Hover to reveal more information.",
-        imageUrl: "https://source.unsplash.com/collection/905011/1000x1000"
-      },
-      
+      }
     ];
   </script>
   
-  
   <main>
+    <span class="glitch" data-text="Sponsors">Sponsors</span>
+    <br>
     <div class="cards-container">
       {#each cards as card}
         <div class="card" style="background-image: url({card.imageUrl})">
@@ -52,31 +45,63 @@
       transition: all 0.3s ease;
     }
   
-    :global(html) {
-      font-size: 16px;
-    }
-  
     :global(body) {
       font-family: 'Open Sans', Verdana, sans-serif;
       color: rgba(0, 0, 0, 0.87);
-      font-weight: 400;
-      line-height: 1.45;
-      background: #fafafa;
+      background: #190233;
       margin: 0;
+      line-height: 1.45;
     }
   
-    header {
-      padding: 40px;
-      min-height: 200px;
+    .glitch {
+      color: white;
+      font-size: 60px;
       text-align: center;
-      color: rgba(10, 0, 0, 0.87);
-      background: #fafafa;
+      text-transform: uppercase;
+      margin: 40px 0;
+      display: block;
+      position: relative;
     }
   
-    header > :global(*) {
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #190233;
+      overflow: hidden;
+      top: 0;
+    }
+  
+    .glitch::before {
+      left: 3px;
+      text-shadow: -2px 0 red;
+      animation: glitch-1 2s linear infinite reverse;
+    }
+  
+    .glitch::after {
+      left: -3px;
+      text-shadow: -2px 0 blue;
+      animation: glitch-2 2s linear infinite reverse;
+    }
+  
+    @keyframes glitch-1 {
+      0% { clip-path: inset(20% 0 30% 0); }
+      20% { clip-path: inset(60% 0 10% 0); }
+      40% { clip-path: inset(40% 0 40% 0); }
+      60% { clip-path: inset(80% 0 5% 0); }
+      80% { clip-path: inset(10% 0 70% 0); }
+      100% { clip-path: inset(30% 0 20% 0); }
+    }
+  
+    @keyframes glitch-2 {
+      0% { clip-path: inset(15% 0 35% 0); }
+      20% { clip-path: inset(55% 0 15% 0); }
+      40% { clip-path: inset(45% 0 35% 0); }
+      60% { clip-path: inset(75% 0 10% 0); }
+      80% { clip-path: inset(15% 0 65% 0); }
+      100% { clip-path: inset(35% 0 15% 0); }
     }
   
     .cards-container {
@@ -90,13 +115,13 @@
     .card {
       border-radius: 16px;
       width: 300px;
-      min-height: 400px;
-      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-        0px 5px 8px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 14px 0px rgba(0, 0, 0, 0.12);
       overflow: hidden;
       background-size: cover;
       flex-shrink: 0;
+      box-shadow: 0 0 10px #9D4EDD, 0 0 40px #9D4EDD;
+      background: linear-gradient(135deg, rgba(255, 0, 255, 0.2), rgba(0, 0, 255, 0.2));
+      border: 2px solid rgba(255,0,255);
+      backdrop-filter: blur(10px);
     }
   
     .info {
@@ -143,39 +168,22 @@
       font-size: 16px;
       line-height: 1.5;
     }
-    .neon-card {
-      box-shadow: 0 0 20px #ff00ff,
-                  0 0 40px #ff00ff;
-      background: linear-gradient(135deg, rgba(255, 0, 255, 0.2), rgba(0, 0, 255, 0.2));
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(10px);
-  }
   
     @media (max-width: 1400px) {
-      .cards-container {
-        gap: 15px;
-      }
+      .cards-container { gap: 15px; }
       .card {
         width: 250px;
         min-height: 350px;
       }
-      .info {
-        height: 350px;
-      }
+      .info { height: 350px; }
     }
   
     @media (max-width: 1100px) {
-      .cards-container {
-        flex-wrap: wrap;
-      }
-      .card {
-        width: calc(50% - 10px);
-      }
+      .cards-container { flex-wrap: wrap; }
+      .card { width: calc(50% - 10px); }
     }
   
     @media (max-width: 768px) {
-      .card {
-        width: 100%;
-      }
+      .card { width: 100%; }
     }
   </style>
