@@ -63,7 +63,7 @@
   
         
         <div class="col-span-2 flex justify-center">
-          <div class="w-px h-40  bg-purple-500/50"></div>
+          <div class="w-px h-50   bg-purple-500/50"></div>
         </div>
   
         
@@ -71,7 +71,7 @@
           
           <div class="flex justify-end mb-8">
             <div class="pb-7 w-2xl  ">
-              <img class="  w-56 h-56 object-contain" src="/ras.svg" alt="IEERAS Logo" />
+              <img class="  w-95 h-80 object-contain pb-2" src="/ras.svg" alt="IEERAS Logo" />
 
             </div>
           </div>
